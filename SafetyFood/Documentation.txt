@@ -1,0 +1,54 @@
+python main.py
+https://dz.kompass.com/
+
+
+#VIEWS to store all the main views o the url end points for the actual fonctionning kind of frontend aspect or our website
+#MODELS use this to store our databases modeles
+ A module called FLASK is just a super lightweight python framework that allows us to make websites really quickly and easilyy 
+ to use it we need to install some packages: 
+1. pip install flask
+2.pip install flask-login
+3.pip install Flask-SQLAlchemy 
+SQLAlchemy  est une chose de bdd une sorte d'emballage de bdd ,nous permet de cree plus facilement des modeles de bdd et l'ajout ainsi que la suppresion
+ 
+
+----------------------------------------------------------AAA. Creating routes and views 
+
+blueprint it's has a bunch of roots inside of it, It has a bunch of URLs defined
+than defined rootes
+
+----------------------------------------------------------BBB. Jinja Templating Language and html templates
+
+inside templates folder and we gonna to put html ,in flask when your rent your html, you call it a template
+and the reason you call it is because there's a special templating language in flask which is called JINJA
+,methods=['GET','POST']  
+JINJA allows you to write a little bit of python inside your html so you can display informations without using Javascript
+
+1.base.html:
+The main content of our website (nav bar ...ect)
+
+import BOOTSTRAP:
+
+1 CDN that allow you to actually load without downloading the file,a bunch of custom css 
+2 {% %} we can override what inside, we can remove it and put another thing in base.html + home.html we move into 
+views to render this template home.html that we can see it on the screen by adding render_template on the views page
+
+
+HTTPS REQUEST:
+GET : when you're loading a website
+POST : means that you make some changes in databases or some kind of change in the state of your web system ,conain all the informations
+
+
+
+Models like layout for object it's gonna store in our database 
+so when i say user it's should conform to all id,email,password..ect
+//   //   //  Note //     //     //     //
+
+
+user, note need to look like this ..(properties of the object)
+
+
+
+..................CREATING A NEW USER ACCOUNT after creating a database ............................................................................
+
+

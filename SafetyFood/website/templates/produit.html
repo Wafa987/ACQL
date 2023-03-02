@@ -1,0 +1,52 @@
+<div>
+  <style>
+    .product-container {
+      display: flex;
+      row-gap: 2rem;
+      flex-direction: column;
+    }
+
+    .product-row {
+      width: fit-content;
+      display: flex;
+      column-gap: 2rem;
+      font-size: 0.7rem;
+      border: 2px solid gray;
+      border-radius: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  </style>
+  <h3>Information Supplémentaire Sur Le Produit Choisi</h3>
+  <div class="product-container">
+    <div class="product-row">
+      <div>
+        <h3>Nom du Produit</h3>
+        <label>{{ product.name }}</label>
+      </div>
+      <div>
+        <h3>Catégorie du Produit</h3>
+        <label>{{ product.category }}</label>
+      </div>
+      <div>
+        <h3>Type du Produit</h3>
+        <label>{{ product.type }}</label>
+      </div>
+      <div>
+        <h3>Wilaya du Produit</h3>
+        <label>{{ product.wilaya }}</label>
+      </div>
+      <div>
+        <h3>Quantité Consommé</h3>
+        <label>{{ product.consommation_qte }}</label>
+      </div>
+      <div>
+        <h3>Quantité Produite</h3>
+        <label>{{ product.production_qte }}</label>
+      </div>
+      <div>
+        <h3>autosuffisance</h3>
+        <label>{{ autosuffisance }}%</label>
+      </div>
+    </div>
+  </div>
+</div>

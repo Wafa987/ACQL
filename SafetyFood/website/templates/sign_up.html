@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="../static/style/style.css" >
+
+
+<div class="header">
+
+<div class="logo">
+<img src="../static/image/logo.png"  width="90px" height="110px">
+</div>
+
+<div class="title">
+<h4 align="center">République algérienne démocratique et populaire <br>
+                      الجمهورية الجزائرية الديمقراطية الشعبية </h4> 
+</div> 
+
+</div>
+
+{% extends "base.html" %}
+{% block title %}
+Sign Up
+{% endblock %} 
+{% block content %}
+
+    <form method="POST">
+      <h4>Sign Up</h4>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="Enter name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password1"
+          name="password1"
+          placeholder="Enter password"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password2">Password (Confirm)</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password2"
+          name="password2"
+          placeholder="Confirm password"
+        />
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}

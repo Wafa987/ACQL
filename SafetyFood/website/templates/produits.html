@@ -1,0 +1,56 @@
+<div>
+  <script>
+    function navigateToSingleProduct(id) {
+      console.log('id', id);
+      window.open('/produit?id=' + id);
+    }
+  </script>
+  
+
+<style>
+  .product-container {
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .product-row {
+    width: fit-content;
+    display: flex;
+    column-gap: 2rem;
+    font-size: 0.7rem;
+    border: 2px solid rgb(55, 48, 151);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+  
+  
+  
+  }
+</style>
+  
+
+  <h3><b>Liste des Produits</b></h3><br>
+  <form>
+    <input placeholder="Recherchez votre produit ici..." name="search" img="" />
+    <button type="submit">Rechercher</button>
+  </form>
+  <div class="product-container">
+    {% for row in products %}
+    <div class="product-row" onclick="navigateToSingleProduct({{row.id}})">
+      <div>
+        <h3>Nom du Produit</h3>
+        <label>{{ row.name }}</label>
+      </div>
+      <div>
+        <h3>Catégorie du Produit</h3>
+        <label>{{ row.category }}</label>
+      </div>
+      <div>
+        <h3>Wilaya du Produit</h3>
+        <label>{{ row.wilaya }}</label>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
